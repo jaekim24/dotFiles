@@ -1,0 +1,47 @@
+imap jj <Esc>
+
+set visualbell
+set number
+set ruler 
+set wildmenu
+set showmatch
+set wrap
+set nu
+set autoindent
+set smartindent
+set autoread
+set nobackup
+set incsearch::
+set mouse=a
+
+syntax on
+
+stdpath('config') . '/init.vim'
+
+call plug#begin('~/.vim/plugged')
+
+plug 'arcticicestudio/nord-vim' 
+plug 'dense-analysis/ale'
+plug 'preservim/nerdtree'
+
+
+
+
+
+
+call plug#end()
+
+" ALE: reasonable defaults from webinstall.dev/vim-ale
+source ~/.vim/plugins/ale.vim
+
+" Put these lines at the very end of your vimrc file.
+
+" Load all plugins now.
+" Plugins need to be added to runtimepath before helptags can be generated.
+packloadall
+" Load all of the helptags now, after plugins have been loaded.
+" All messages and errors will be ignored.
+silent! helptags ALL
+
+" ALE: reasonable defaults from webinstall.dev/vim-ale
+source ~/.vim/plugins/ale.vim
