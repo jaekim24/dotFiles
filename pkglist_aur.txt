@@ -1,0 +1,8 @@
+anki
+brave-bin
+google-chrome
+notion-app
+sc-im
+spotify
+vim-plug-git
+yay
